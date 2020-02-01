@@ -6,11 +6,14 @@ public class Projectile : MonoBehaviour
 {
     // Start is called before the first frame update
     Rigidbody rb;
+    AudioSource source;
     public float scoreValue=100;
+    public bool blocked=false;
     public GameManager scoreTracker;
     void Start()
     {
         rb=GetComponent<Rigidbody>();
+        source=GetComponent<AudioSource>();
         Destroy(gameObject,5);
         scoreTracker=FindObjectOfType<GameManager>();
     }
@@ -25,6 +28,11 @@ public class Projectile : MonoBehaviour
         if(collision.transform.tag=="Sword"){
             rb.useGravity=true;
             scoreTracker.score+=scoreValue;
+            scoreValue=0;
+            if(!blocked){
+                source.Play();
+            }
+            blocked=true;
         }
     }
 }

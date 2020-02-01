@@ -54,9 +54,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\PauseGame.cs" />
      <Compile Include="Assets\Projectile.cs" />
+     <Compile Include="Assets\ResumeGame.cs" />
      <Compile Include="Assets\Shooter.cs" />
      <Compile Include="Assets\Sword.cs" />
+     <Compile Include="Assets\TakeDamage.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/Sword/SwordCombat/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

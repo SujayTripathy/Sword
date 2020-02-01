@@ -53,13 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameManager.cs" />
-     <Compile Include="Assets\PauseGame.cs" />
-     <Compile Include="Assets\Projectile.cs" />
-     <Compile Include="Assets\ResumeGame.cs" />
-     <Compile Include="Assets\Shooter.cs" />
-     <Compile Include="Assets\Sword.cs" />
-     <Compile Include="Assets\TakeDamage.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\PauseGame.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\ResumeGame.cs" />
+     <Compile Include="Assets\Scripts\Shooter.cs" />
+     <Compile Include="Assets\Scripts\Sword.cs" />
+     <Compile Include="Assets\Scripts\TakeDamage.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/Sword/SwordCombat/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

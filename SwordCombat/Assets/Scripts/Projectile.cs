@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody rb;
     AudioSource source;
-    public float scoreValue=100;
+    public int scoreValue=100;
     public bool blocked=false;
     public GameManager scoreTracker;
     void Start()

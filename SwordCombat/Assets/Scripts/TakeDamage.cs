@@ -20,5 +20,6 @@ public class TakeDamage : MonoBehaviour
     void OnCollisionEnter(Collision collision){
         if(!collision.transform.GetComponent<Projectile>().blocked)
             healthTracker.health--;
+            Destroy(collision.gameObject);
     }
 }

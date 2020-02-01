@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    public GameObject cube;
+    public GameObject[] cube;
     public float speed=70;
     float time=2f;
     float initialTime;
@@ -18,8 +18,8 @@ public class Shooter : MonoBehaviour
     void Update()
     {   
 
-        if(Time.time-initialTime>=time){
-            GameObject now=Instantiate(cube,transform.position+new Vector3(Random.Range(-10,10),0,0),transform.rotation);
+        if(Time.time-initialTime>=Random.Range(1f,time)){
+            GameObject now=Instantiate(cube[Random.Range(0,cube.Length)],transform.position+new Vector3(Random.Range(-10,10),Random.Range(-5,0),0),transform.rotation);
             now.GetComponent<Rigidbody>().AddForce(now.transform.forward*speed,ForceMode.VelocityChange);
             now.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(-1,1),Random.Range(-1,1),Random.Range(-1,1)),ForceMode.VelocityChange);
             speed+=1f;
